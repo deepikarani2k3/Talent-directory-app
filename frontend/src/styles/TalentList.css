@@ -1,0 +1,197 @@
+/* TalentList.css */
+.talents-container {
+  padding: 2rem;
+}
+
+.talents-container h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.talent-count {
+  text-align: center;
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.talents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.talent-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.talent-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.talent-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.talent-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  flex: 1;
+}
+
+.experience-badge {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.talent-body {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.talent-email {
+  margin: 0 0 1rem 0;
+  color: #555;
+  font-size: 0.95rem;
+  word-break: break-all;
+}
+
+.talent-email strong {
+  color: #333;
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.skills-section {
+  color: #555;
+}
+
+.skills-section strong {
+  color: #333;
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.skill-tag.clickable {
+  cursor: pointer;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.skill-tag.clickable:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+.talent-footer {
+  background: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.created-date {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1.5rem;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .talents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .talent-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .talent-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience-badge {
+    align-self: flex-start;
+  }
+}
