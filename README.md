@@ -1,8 +1,8 @@
-# 💼 Talent Directory App
+#  Talent Directory App
 
 A full-stack web application for managing and discovering talented professionals. Built with React, Redux, Node.js, Express, and MongoDB.
 
-## 🌟 Features
+##  Features
 
 - ✅ **View Talents**: Display all registered talents in a beautiful card layout
 - ✅ **Add New Talent**: Form to add new talents with validation
@@ -12,7 +12,7 @@ A full-stack web application for managing and discovering talented professionals
 - ✅ **Real-time Updates**: No page refresh required when adding new talents
 - ✅ **Error Handling**: Comprehensive error validation and user feedback
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 talent-directory/
@@ -55,7 +55,7 @@ talent-directory/
 
 ```
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend
 - **Node.js** - JavaScript runtime
@@ -73,14 +73,14 @@ talent-directory/
 - **Axios** - HTTP client
 - **CSS3** - Styling (no external UI library needed)
 
-## 📋 Prerequisites
+##  Prerequisites
 
 Before you begin, ensure you have the following installed:
 - Node.js (v14 or higher)
 - npm or yarn
 - MongoDB (locally installed or cloud instance like MongoDB Atlas)
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Step 1: Clone or Download the Project
 
@@ -147,7 +147,7 @@ npm start
 
 The frontend will open automatically at `http://localhost:3000`
 
-## 📚 API Endpoints
+##  API Endpoints
 
 ### Base URL
 ```
@@ -219,7 +219,7 @@ Content-Type: application/json
 }
 ```
 
-## ✅ Input Validation
+##  Input Validation
 
 ### Talent Model Validation Rules
 
@@ -230,7 +230,7 @@ Content-Type: application/json
 | skills | Array | Required, at least 1 skill |
 | experience | Number | Required, 0-70 years |
 
-## 🎨 User Interface Components
+##  User Interface Components
 
 ### 1. **TalentForm Component**
 - Form to add new talents
@@ -251,7 +251,7 @@ Content-Type: application/json
 - Empty state message when no talents available
 - Error handling with appropriate messages
 
-## 🎯 How to Use
+##  How to Use
 
 ### Adding a Talent
 1. Fill in all fields in the "Add New Talent" form
@@ -270,7 +270,7 @@ Content-Type: application/json
 - Each card shows: Name, Email, Skills, Experience, and Date Added
 - Cards have a hover effect for better interactivity
 
-## 🧪 Testing the App
+##  Testing the App
 
 ### Sample Data to Test
 
@@ -299,15 +299,15 @@ Then test filtering:
 - Search "Node.js" - should show Bob
 - Search "Python" - should show Carol
 
-## 📱 Responsive Design
+##  Responsive Design
 
 The application is fully responsive and works on:
-- 🖥️ Desktop (1920px and above)
-- 💻 Laptop (1024px - 1920px)
-- 📱 Tablet (768px - 1024px)
-- 📲 Mobile (320px - 768px)
+-  Desktop (1920px and above)
+-  Laptop (1024px - 1920px)
+-  Tablet (768px - 1024px)
+-  Mobile (320px - 768px)
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Backend Issues
 
@@ -337,7 +337,7 @@ kill -9 <PID>
 - Clear browser cache (Ctrl+Shift+Delete)
 - Restart npm: `npm start`
 
-## 📝 Talent Model Schema
+##  Talent Model Schema
 
 ```javascript
 {
@@ -371,15 +371,15 @@ kill -9 <PID>
 }
 ```
 
-## 🔐 Security Considerations
+##  Security Considerations
 
-- ✅ Input validation on both frontend and backend
-- ✅ Email format validation
-- ✅ Unique email constraint in database
-- ✅ CORS enabled for safe cross-origin requests
-- ✅ Error messages don't expose sensitive information
+-  Input validation on both frontend and backend
+-  Email format validation
+-  Unique email constraint in database
+-  CORS enabled for safe cross-origin requests
+-  Error messages don't expose sensitive information
 
-## 📦 Production Deployment
+##  Production Deployment
 
 ### Backend Deployment (Heroku/Railway/Render)
 1. Push code to GitHub
@@ -393,11 +393,11 @@ kill -9 <PID>
 3. Set API URL to production backend
 4. Deploy
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 👥 Support
+##  Support
 
 For issues or questions:
 1. Check the Troubleshooting section
@@ -406,4 +406,4 @@ For issues or questions:
 
 ---
 
-**Happy Talent Hunting! 🚀**
+**Happy Talent Hunting! **
